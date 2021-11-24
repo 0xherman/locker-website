@@ -1,0 +1,38 @@
+doctype html
+html.no-js(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    |     
+    title Bitlock #{lockAddress}
+    |     
+    // CSS
+    link(rel='stylesheet', href='css/styles.css')
+  body#particles-js 
+    .container
+      h1#headline Locked Until
+        #date
+      #countdown 
+        ul 
+          li 
+            span#days 
+            | days 
+          li 
+            span#hours
+            | Hours 
+          li 
+            span#minutes
+            | Minutes 
+          li 
+            span#seconds
+            | Seconds 
+      #content 
+        h3 All tokens held on the lock contract, including BNB and LP, are locked until the above date. Please review 
+          a(href="https://bscscan.com/address/#{lockAddress}", target="_blank") BscScan
+          |  link for details on the contract and token holdings.
+      // Java Script
+      script(src='js/main.js')
+      |     
+      script(src='js/particles.min.js')
+      |     
+      script(src='js/particle-settings.js')
