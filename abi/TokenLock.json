@@ -1,6 +1,6 @@
 [{
 		"inputs": [{
-				"internalType": "address",
+				"internalType": "address payable",
 				"name": "factory",
 				"type": "address"
 			},
@@ -278,7 +278,7 @@
 	},
 	{
 		"inputs": [{
-			"internalType": "address",
+			"internalType": "address payable",
 			"name": "factoryAddress",
 			"type": "address"
 		}],

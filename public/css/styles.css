@@ -13,11 +13,13 @@ html,
 body {
     height: 100%;
     margin: 0;
+    height: 100%;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    overflow: hidden;
 }
 
 body {
     align-items: center;
-    background-color: black;
     display: flex;
     font-family: -apple-system,
         BlinkMacSystemFont,
@@ -41,6 +43,7 @@ body {
     background-color: rgba(200, 200, 200, 0.9);
     border-radius: 5px;
     padding: 5%;
+    box-shadow: -1px 15px 30px -12px black;
 }
 
 h1, h3 {

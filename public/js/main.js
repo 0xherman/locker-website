@@ -2,7 +2,7 @@
 
     'use strict';
 
-    const address = location.pathname.replace(/[^A-Za-z0-9]/, '');
+    const address = document.getElementById("address").value;
 
     const second = 1000,
         minute = second * 60,
