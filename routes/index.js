@@ -13,8 +13,12 @@ router.get('/:address(0x[a-fA-F0-9]{40})', function(req, res, next) {
 
 router.get('/:name', async function(req, res, next) {
   let locksvc = new LockService();
-  let lockAddress = await locksvc.getLockAddress(req.params.name);
-  console.log(lockAddress);
-  res.render('lock', { lockAddress: lockAddress });
+  try {
+    let lockAddress = await locksvc.getLockAddress(req.params.name);
+    res.render('lock', { lockAddress: lockAddress });
+  }
+  catch (ex) {
+    res.render('lock', { lockAddress: 0x0 })
+  }
 })
 module.exports = router;
