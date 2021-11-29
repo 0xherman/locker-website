@@ -4,7 +4,7 @@ var LockService = require('../services/locks');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Bitlocker' });
+  res.render('index', { title: 'Tokenlock' });
 });
 
 router.get('/:address(0x[a-fA-F0-9]{40})', function(req, res, next) {
